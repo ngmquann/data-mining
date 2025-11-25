@@ -77,6 +77,6 @@ def prepare_data(df: pd.DataFrame, target_column="Churn"):
 if __name__ == "__main__":
     df = pd.read_csv("data/Customer_Churn.csv")
     X_train, X_test, y_train, y_test = prepare_data(df)
-    print("✅ Tiền xử lý hoàn tất!")
-    print(f"📊 Train size: {X_train.shape} | Test size: {X_test.shape}")
-    print(f"🎯 Phân bố Churn - Train: {y_train.value_counts().to_dict()}")
+    print(" Tiền xử lý hoàn tất!")
+    print(f" Train size: {X_train.shape} | Test size: {X_test.shape}")
+    print(f" Phân bố Churn - Train: {y_train.value_counts().to_dict()}")
