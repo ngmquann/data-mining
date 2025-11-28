@@ -59,12 +59,3 @@ streamlit run src/app.py
 (Lưu ý: Đảm bảo file model.pkl nằm cùng thư mục với app.py hoặc cập nhật đúng đường dẫn)
 
 Sau khi chạy, truy cập vào địa chỉ: http://localhost:8501 trên trình duyệt.
-
-STT,MSSV,Họ và tên,Vai trò
-1,2251120023,Trần Trung Kiên,Thành viên
-2,2251120043,Nguyễn Minh Quân,Thành viên
-3,2251120314,Nguyễn Trọng Thái,Thành viên
-4,2251150002,Trần Đặng Đình Cơ,Thành viên
-5,2251150019,Nguyễn Hữu Kiều,Nhóm trưởng
-6,2251150012,Võ Trần Hoàng,Thành viên
-7,096205010694,Lý Duy Khang,Thành viên
