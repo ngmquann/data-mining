@@ -93,7 +93,7 @@ input_data = {
     "OnlineSecurity": get_index(online_security, ["No", "No internet service", "Yes"]),
     "OnlineBackup": 0, # Giả sử app thiếu cột này (Model có thể cần 20 cột?), ta tạm để default hoặc thêm vào UI nếu cần. 
                        # Cảnh báo: Nếu Model 19 cột, hãy kiểm tra kỹ danh sách cột. 
-                       # Ở đây mình thêm đủ các cột Internet services thường gặp.
+                       # Ở đây thêm đủ các cột Internet services thường gặp.
     "DeviceProtection": get_index(device_protection, ["No", "No internet service", "Yes"]),
     "TechSupport": get_index(tech_support, ["No", "No internet service", "Yes"]),
     "StreamingTV": get_index(streaming_tv, ["No", "No internet service", "Yes"]),
@@ -107,11 +107,11 @@ input_data = {
 
 # LƯU Ý: Model Telco thường có cột "OnlineBackup". 
 # Nếu code trên chạy mà báo lỗi "expecting 20 features" hoặc sai tên, 
-# bạn cần thêm widget cho OnlineBackup vào cột 2.
-# Tạm thời mình fix cứng OnlineBackup = No để test 19 features (vì trong UI trên mình lỡ thiếu 1 cái).
+# cần thêm widget cho OnlineBackup vào cột 2.
+# Tạm thời fix cứng OnlineBackup = No để test 19 features (vì trong UI trên lỡ thiếu 1 cái).
 
 # Cập nhật thêm OnlineBackup cho đủ bộ (thêm vào input_data ở trên luôn cho chắc)
-# Để đơn giản, mình giả định bạn nhập vào input_data luôn.
+# Để đơn giản, giả định bạn nhập vào input_data luôn.
 
 # --- 4. DỰ ĐOÁN ---
 st.divider()
@@ -156,4 +156,5 @@ if st.button("🚀 Phân Tích Ngay", use_container_width=True):
             
     except Exception as e:
         st.error(f"Lỗi khi dự đoán: {e}")
+
         st.info("Gợi ý: Kiểm tra lại số lượng cột trong model.pkl so với code này (đang là 19 cột).")
