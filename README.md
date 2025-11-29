@@ -20,30 +20,7 @@ Machine Learning: Scikit-learn (Logistic Regression, Random Forest)
 Giao diện Demo: Streamlit
 
 ⚙️ Hướng dẫn cài đặt (Installation)
+<img width="602" height="589" alt="image" src="https://github.com/user-attachments/assets/bc261538-8b34-4e10-a98c-27385e5dd195" />
+<img width="549" height="126" alt="image" src="https://github.com/user-attachments/assets/905d8655-4889-4e4f-aafc-b0087fec1df5" />
 
-Clone dự án về máy:
-
-Bash
-
-git clone [LINK_GITHUB_CUA_BAN]
-
-cd Customer-Churn-Prediction
-
-Cài đặt các thư viện cần thiết: Bạn có thể cài đặt nhanh bằng câu lệnh sau:
-
-Bash
-
-pip install pandas numpy scikit-learn matplotlib seaborn streamlit joblib
-
-Hướng dẫn chạy Demo (Usage)
-
-Để khởi chạy ứng dụng dự đoán trên trình duyệt web, chạy lệnh sau tại thư mục gốc của dự án:
-
-Bash
-
-streamlit run src/app.py
-
-(Lưu ý: Đảm bảo file model.pkl nằm cùng thư mục với app.py hoặc cập nhật đúng đường dẫn)
-
-Sau khi chạy, truy cập vào địa chỉ: http://localhost:8501 trên trình duyệt.
 
