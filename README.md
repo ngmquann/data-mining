@@ -26,11 +26,13 @@ Dự án áp dụng quy trình chuẩn **CRISP-DM** và sử dụng thuật toá
 clone dự án
 
    git clone [https://github.com/username/telco-churn-prediction.git](https://github.com/username/telco-churn-prediction.git)
+   
    cd telco-churn-prediction
 
 Tạo môi trường ảo (Khuyên dùng Python 3.12):
 
    py -3.12 -m venv my_env
+   
    .\my_env\Scripts\Activate
 
 Cài đặt thư viện
@@ -40,3 +42,4 @@ Cài đặt thư viện
 Chạy ứng dụng:
 
   streamlit run demo/demo.py
+
